@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>replit</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  
+  <body>
+
+    <div id="col-lg-12">
+        <div id="header">
+
+
+        </div>
+
+    <br><br><br><br>
+    
+    </div>
+
+    <div class="title-page col-lg-12 col-md-12 col-sm-12">
+    <h2>Here's some of the projects I've worked on!</h2>  
+    </div>  
+
+    <!-- Trigger/Open The Modal -->
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+    
+      <!-- Modal content -->
+      <div class="modal-content col-lg-08 col-md-08 col-sm-12">
+        <div class="modal-header col-lg-10 col-md-10 col-sm-12">
+          <span class="close">&times;</span>
+          <h2 id="modal-header"></h2>
+        </div>
+        <div class="modal-body col-lg-12 col-md-08 col-sm-12">
+            <p id="modal-text"> y </p>
+            <p id="modal-img"></p>
+        </div>
+        <div class="modal-footer col-lg-08 col-md-8 col-sm-12">
+            <h3 id="modal-footer"></h3>
+        </div>
+      </div>
+    
+    </div>
+    
+    <div id="filter-development">
+      <div class="col-lg-02 col-md-12 col-sm-12">
+      <h3>HTML/CSS/JS (and more) Projects</h3>
+      </div>
+      <div class="more-info col-lg-10 col-md-12 col-sm-12">
+        <p>
+            &emsp;&emsp;<i>School and Personal projects focusing on responsive web development with HTML/CSS/JS, node.js, and React, with more frameworks
+                to be added in the future. </i>
+        </p>
+
+      </div>
+
+
+
+      <div class="col-lg-12 col-md-12 col-sm-12">
+
+        <img src="img/mentor.jpg" alt="html/css/js project" class="project project-desc" onclick="portfolioClick('mentor')">
+        <img src="img/restaurant-search.jpg" alt="html/css/js project" class="project project-desc" onclick="portfolioClick('restaurant-search')">
+        <img src="img/jbs-restaurant.jpg" alt="html/css/js project" class="project project-desc" onclick="portfolioClick('jbs-restaurant')">
+        <img src="img/invest.jpg" alt="html/css/js project" class="project project-desc" onclick="portfolioClick('invest')">
+        <img src="img/color-picker.jpg" alt="html/css/js project" class="project project-desc" onclick="portfolioClick('color-picker')">
+        <img src="img/calculator.jpg" alt="html/css/js project" class="project project-desc" onclick="portfolioClick('calculator')">
+      </div>
+
+      <div class="col-lg-12 col-md-12 col-sm-12">
+        <br><br><br><br>
+      </div>
+
+      <div class="col-lg-02 col-md-12 col-sm-12">
+      <h3>Software Projects (Python, Java, JS)</h3>
+      </div>
+      <div class="more-info col-lg-10 col-md-12 col-sm-12">
+      <p>
+          &emsp;&emsp;<i> A mixture of School and Personal projects, focusing on Python and Java for Desktop app development with GUI, Server, and File Management 
+              integration. Plus a combination of VoltBuilder and HTML/CSS/JS to create responsive desktop/mobile web apps. </i>
+      </p>
+      </div>
+
+      <div class="col-lg-12 col-md-12 col-sm-12">
+        <img src="img/student-mgmt.jpg" alt="html/css/js project" class="project project-desc" onclick="portfolioClick('student-mgmt')">
+        <img src="img/checkout-system.jpg" alt="html/css/js project" class="project project-desc" onclick="portfolioClick('checkout-system')">
+        <img src="img/manager.jpg" alt="html/css/js project" class="project project-desc" onclick="portfolioClick('manager')">
+        <img src="img/chat-server.jpg" alt="html/css/js project" class="project project-desc" onclick="portfolioClick('chat-server')">
+        <img src="img/phone-1.jpg" alt="html/css/js project" class="project project-desc" onclick="portfolioClick('phone-1')"> 
+        <img src="img/phone-2.jpg" alt="html/css/js project" class="project project-desc" onclick="portfolioClick('phone-2')">
+        <img src="img/phone-3.jpg" alt="html/css/js project" class="project project-desc" onclick="portfolioClick('phone-3')">
+
+      </div>
+      
+      <div class="col-lg-02 col-md-12 col-sm-12">
+      <h3>Database Projects</h3>
+      </div>
+      <div class="more-info col-lg-10 col-md-12 col-sm-12">
+      <p>
+          &emsp;&emsp;<i> A showcase of a working database I built in cooperation with a small group of students for our Business Database Systems class.
+              Plus some ERDs for other projects. </i>
+      </p>
+      </div>
+
+      <div class="col-lg-12 col-md-12 col-sm-12">
+
+        <img src="img/sql-dog.jpg" alt="html/css/js project" class="project project-desc" onclick="portfolioClick('sql-dog')">
+      </div>
+
+      <div class="col-lg-02 col-md-12 col-sm-12">
+      <h3>WIP Projects / Whiteboarding Phase</h3>
+      </div>
+
+      <div class="more-info col-lg-10 col-md-12 col-sm-12">
+      <p>
+          &emsp;&emsp;<i> A place for projects I'm working on that aren't quite ready to be published yet but I'm still excited to be working on </i>
+      </p>
+      </div>
+
+    </div>
+
+    <div class="col-lg-12 col-md-12 col-sm-12">
+
+    </div>
+
+    <div id="filter-music" class="col-lg-02 col-md-12 col-sm-12">
+      <h3>Music</h3>
+      </div>
+
+      <div class="more-info col-lg-10 col-md-12 col-sm-12">
+      <p>
+          &emsp;&emsp;<i>Current Projects: <br>
+            Lifter (Alternative Metal band) - self recording our first album. 12 songs written, we've started tracking 6 of those songs so far. 
+            <br>
+            Busy Signals (Solo Metal Project) - Been working on a solo album since December of 2020. Currently have over 20 songs started, 13 of those
+            are mostly written, just need to polish the tracking. 
+            <br>
+            The Color Purple (synth experiment) - Last year I bought a midi keyboard and accidentally started writing a synthwave EP. Currently have 5 demos,
+            just need to be mixed.  </i>
+
+            <iframe src="https://drive.google.com/file/d/1j34AgLNQCyq9tGl4Rjbew8b1OmS41HYI/preview" width="320" height="240" allow="autoplay"></iframe>
+      </p>
+      </div>
+
+      <div class="col-lg-12 col-md-12 col-sm-12">
+
+      </div>
+
+
+    <div class="portfolio-placeholder">
+      <p id="mentor-text">
+        Mentorlink application developed in collaboration with five other students for our Captsone Information Systems project. 
+        We used an Agile approach to develop the website over the course of four, week long sprints and communicated via Slack, Trello Boards,
+        and Zoom meetings. We used REPL.it, an online develoment platform to give us the ability to write live code together remotely and collaborate
+        without having to worry about accidentally overwriting someone's work. 
+        <br>
+        I was on the development side of the project, focusing on site navigation and functionality, utilizing JavaScript to enable page traversal
+        and updating thread posts. Each week I participated in team meetings discussing our plans for the upcoming week's sprint, and the tasks we would take on to 
+        accomplish those goals. We utilized a Scrum framework to organize our team roles, and throughout the week our "Scrum Master" would periodically 
+        reach out to see how we were progressing through the sprint. 
+        <br> 
+        One of the biggest challenges we faced during this project was doing everything remotely, as ASU still had limited campus access in the Spring of 2021 when this was developed.
+        Coordinating meetings, tasks, and general communication was slow-going until we started getting into the general workflow of online collaboration. Fortunately, this was our 
+        second project I had worked on with this team, so it was a lot more seamless than the first project. 
+
+    </p>
+
+    <p id="mentor-img">
+      <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vQ-WfWUdmsefah0GHNMFQyMgodj3-xZGlagl2pTTb-S-Sj5SkWikb8buNgTOx9KmXRSU06sL2jD_TvV/embed?start=false&loop=false&delayms=5000" frameborder="0" width="480" height="299" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+    </p>
+
+    <p id="rsearch-text">
+      This was one of the group projects I worked on for my Capstone in Information Systems class at ASU. This was the first project I worked on with this team, 
+      and we would later work together on building our mentoring application. This first project was completed using an Agile approach with a Scrum based framework, 
+      and consisted of three, week-long sprints. 
+      <br><br>
+      This project was more focused on functionality than aesthetics, as it was meant to serve as a laucnhing point for our team to work a bigger project.
+      I was on the development team for this project and worked on implementing administrator functionality and restaurant review features primarily using JavaScript.
+      <br><br>
+      Through working on this restaurant search website I learned how important it is to understand the role every member of the team plays, and pay attention to the 
+      functionality they are implementing, in order to ensure the code remains consistent and compatible. I had to work closely with the developers working on the login 
+      and user profiles to make sure the administrator and restaurant review features utilized the features they were working on. Thanks to this coordination and consistent use
+      of an updated Trello board, we were able to get our project to a presentable state that could serve as a foundation for bigger web apps in the future. 
+  </p>
+
+  <p id="rsearch-img">
+    <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vS1TMy343f-5JkHDkfjgbp2p9DSPTJCwOshFU9gEXx_4LBURE6SfFcDq8w30OCp8p7mE8TixuPl-X-j/embed?start=false&loop=false&delayms=3000" frameborder="0" width="480" height="299" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+  </p>
+
+  <p id="jbs-text">
+    A group project I worked on with two other students for our Web Technologies class. Our goal for this project was to develop a new website for a local
+    business that implments various features such as integration with a mysql database to pull pricing information, a cart system that calculates total price, and a contact
+    with all relevant links and maps. 
+  </p>
+  <p id="jbs-img">
+    <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vQm7_BBX_LJ5wBaCFaaZSOi5-ukCCBikkzxOTchfCb3VjMDiL07e3KbVD3wOyaANMgaaRPMU7QZzCFH/embed?start=false&loop=false&delayms=3000" frameborder="0" width="480" height="299" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+  </p>
+
+  <p id="invest-text">
+    Investing web app that calculates investment timelines based on user input. 
+
+    Utilizes HTML/CSS/JS
+
+  </p>
+  <p id="invest-img">
+    <img src="img/invest-startup.png" alt="startup">
+  </p>
+
+  <p id="color-text">
+    Web app that determines colors based on user input and slider interaction. 
+  </p>
+
+  <p id="color-img">
+    <img src="img/color-2.png">
+  </p>
+
+  <p id="calculator-text">
+    Simple, functioning calculator web app / helped with output testing
+
+  </p>
+
+  <p id="calculator-img">
+    <img src="img/calculator-squared-1.png" alt="Calculator">
+  </p>
+
+  <p id="student-mgmt-text">
+
+    Java app that allows users to manage a class of students and their individual test scores. Users can select any number of quizzes they
+    want and the app will calculate: class average, student average, and quiz average based on the user entered data. 
+
+  </p>
+
+  <p id="student-mgmt-img">
+    <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vSmOmTirQCZstCBuwA0h9cFb1bugmW3OfdGife6Zs2lxI657ObASydvxRRwXK8Shq8eeMATx2yISlRg/embed?start=false&loop=false&delayms=3000" frameborder="0" width="480" height="299" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+  </p>
+
+  <p id="library-checkout-text">
+    Java app that is an electronic device checkout system that provides features such as current rental status for an item, item search, ability to update and 
+    delete items from the array, add new device (generates unique SKU), and more. 
+
+  </p>
+
+  <p id="library-checkout-img">
+    <img src="img/library-code.png">
+    <img src="img/library-code-2.png">
+
+  </p>
+
+  <p id="manager-text">
+    Employee management app that keeps track of employee information and lists all employees under a certain manager. Focuses on inheritance
+    as all managers inherit the traits of the employee class. 
+
+  </p>
+
+  <p id="manager-img">
+    <img src="img/manager-1.png">
+    <img src="img/manager-2.png">
+
+  </p>
+
+  <p id="chat-text">
+    Python chat server that enables multiple clients to connect directly to the server module and communicate real time. 
+
+  </p>
+
+  <p id="chat-img">
+    <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vRWQ_L8quF5h227btRRcfhYsOwHjFlknDl7PLHKWoxeyrrG_4rosqulNPE6yBF6cL2UqZcigRmbVUWC/embed?start=false&loop=false&delayms=3000" frameborder="0" width="480" height="299" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+  </p>
+
+  <p id="mob1-text">
+
+    Mobile-first focused, web app, that connects to a sql database and allows a user to search for popular baby names based on a given 
+    state and year, and provides the user with clean visual representation of the frequency of certain names. 
+
+  </p>
+
+  <p id="mob1-img">
+    <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vQ58yuo-b7nvqTHLbkEEGq2U638oty0yIDpCCEoS1l2m0WW7-STpMbyAVnsMuGA3o-ANQCv3Ra--ymD/embed?start=false&loop=false&delayms=3000" frameborder="0" width="480" height="299" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+  </p>
+
+  <p id="mob2-text">
+
+    Mobile app study that aimed to take advantage of the motion control on smart phones to dynamically change the screen color as the 
+    user shakes their device.
+
+  </p>
+
+  <p id="mob2-img">
+    <img src="img/color-change-1.png">
+    <img src="img/color-change-2.png">
+    <img src="img/color-change-3.png">
+
+  </p>
+  <p id="mob3-text">
+    Mobile app study that expanded on the color shake app to provide additional locational information to the user and gives the user a live graphical
+    representation of the data as it is being processed. 
+
+  </p>
+
+  <p id="mob3-img">
+    <img src="img/motion-1.png">
+    <img src="img/motion-2.png">
+
+  </p>
+
+  <p id="dog-text">
+
+    Report for a custom SQL database solution I worked on in collaboration with a group of peers for my Database class to integrate a new SQL Database
+    into a business that is looking for a new way to keep track of all of their data. In this case, our report was based on a Dog Grooming company, 
+    and we had to design a database that would keep track of employee, customer, dog, and pricing information while sticking to the current format
+    of their business rules. 
+
+  </p>
+  <p id="dog-img">
+    <iframe src="https://drive.google.com/file/d/1FVzeSK_ZeWPz82QqzW8IzKUOo4N2R9Pr/preview" width="640" height="480" allow="autoplay"></iframe>
+  </p>
+    </div>
+
+
+    <script src="scripts.js"></script>
+    <script src="header.js"></script>
+    <script src="header.js"></script>
+  </body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>replit</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+<body>
+    <p id="mentor">
+        Mentorlink application developed in collaboration with five other students for our Captsone Information Systems project. 
+        We used an Agile approach to develop the website over the course of four, week-long sprints and communicated via Slack, Trello Boards,
+        and Zoom meetings. We used REPL.it, an online develoment platform to give us the ability to write live code together remotely and collaborate
+        without having to worry about accidentally overwriting someone's work. 
+        <br>
+        I was on the development side of the project, focusing on site navigation and functionality, utilizing JavaScript to enable page traversal
+        and updating thread posts. Each week I participated in team meetings discussing our plans for the upcoming week's sprint, and the tasks we would take on to 
+        accomplish those goals. We utilized a Scrum framework to organize our team roles, and throughout the week our "Scrum Master" would periodically 
+        reach out to see how we were progressing through the sprint. 
+        <br> 
+        One of the biggest challenges we faced during this project was doing everything remotely, as ASU still had limited campus access in the Spring of 2021 when this was developed.
+        Coordinating meetings, tasks, and general communication was slow-going until we started getting into the general workflow of online collaboration. Fortunately, this was our 
+        second project I had worked on with this team, so it was a lot more seamless than the first project. 
+
+
+    </p>
+    <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vQ-WfWUdmsefah0GHNMFQyMgodj3-xZGlagl2pTTb-S-Sj5SkWikb8buNgTOx9KmXRSU06sL2jD_TvV/embed?start=false&loop=false&delayms=5000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+
+    <p id="rsearch-text">
+        This was one of the group projects I worked on for my Capstone in Information Systems class at ASU. This was the first project I worked on with this team, 
+        and we would later work together on building our mentoring application. This first project was completed using an Agile approach with a Scrum based framework, 
+        and consisted of three, week-long sprints. 
+        <br><br>
+        This project was more focused on functionality than aesthetics, as it was meant to serve as a laucnhing point for our team to work a bigger project.
+        I was on the development team for this project and worked on implementing administrator functionality and restaurant review features primarily using JavaScript.
+        <br><br>
+        Through working on this restaurant search website I learned how important it is to understand the role every member of the team plays, and pay attention to the 
+        functionality they are implementing, in order to ensure the code remains consistent and compatible. I had to work closely with the developers working on the login 
+        and user profiles to make sure the administrator and restaurant review features utilized the features they were working on. Thanks to this coordination and consistent use
+        of an updated Trello board, we were able to get our project to a presentable state that could serve as a foundation for bigger web apps in the future. 
+    </p>
+
+
+<script src="scripts.js"></script>
+</body>
+</html>

@@ -1,0 +1,275 @@
+body{
+    background-color: #FFEFEC;
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: Tahoma, Helvetica, sans-serif;
+  }
+
+
+p{
+  padding: 1em;
+}
+
+h1, h2, h3, h4{
+  padding: 1em;
+}
+/*Title of page - blog / contact me... etc */
+.title-page{
+    background-color: #F26A8D !important;
+  }
+
+/*Styling for information on different sections of portfolio */
+.more-info{
+    background-color: #CBEEF3 !important;
+   
+}
+
+/* container for typewriter effect */
+.container{
+    display: inline-block;
+  }
+
+/* typewriter effect styling */
+.typewriter{
+    overflow: hidden;
+    border-right: .15em solid orange;
+    white-space: nowrap;
+    animation: 
+    typing 5s steps(180, end) forwards;
+    font-size: 1.6rem;
+    width: 0;
+  }
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 60% }
+  }
+/* TODO: condense music/browsing/development to 1 class since its mostly the same code*/
+/* home page site filter - music */
+.music{
+    background-image: url('img/guitars.jpg') !important;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #FEE1E2;
+}
+.music:hover{
+  color:#FFFFFF
+
+}
+
+/* home page site filter - just browsing */
+.browsing{
+  background-image: url('img/pug.jpg') !important;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #FEE1E2;
+}
+.browsing:hover{
+  color:#FFFFFF
+
+}
+
+/* home page site filter - development */
+.development{
+  background-image: url('img/laptop.jpg') !important;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #FEE1E2;
+}
+.development:hover{
+  color:#FFFFFF
+
+}
+/* header styling
+TODO: - give header buttons a unique class instead of generic ul and li tags in order to enable lists to be used in other sections of
+the site in the future without defaulting to the header styling
+*/
+ul {
+    list-style-type: none !important;
+    list-style: none !important;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333333;
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    background-color: #880D1E;
+    padding: 16px;
+    text-decoration: none;
+  }
+  
+  li a:hover {
+    background-color: #111111;
+  }
+/* end header styling */
+
+/* background img for about me section */
+.about-me{
+    background-image: url('spencer-desert.jpg') !important;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+/* project icon styling */
+.project{
+  height: 20vh;
+  width: 12vw;
+  border-radius: 50%;
+  text-align: center;
+  
+}
+
+.project:hover{
+  width: 15vw;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+/* porfolio text placeholder */
+.portfolio-placeholder{
+  display:none;
+}
+
+/* Modal Header */
+.modal-header {
+  padding: 2px 16px;
+  background-color: #5cb85c;
+  color: white;
+}
+
+/* Modal Body */
+.modal-body {padding: 2px 16px;}
+
+/* Modal Footer */
+.modal-footer {
+  padding: 2px 16px;
+  background-color: #5cb85c;
+  color: white;
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+  animation-name: animatetop;
+  animation-duration: 0.4s
+}
+
+/* Add Animation */
+@keyframes animatetop {
+  from {top: -300px; opacity: 0}
+  to {top: 0; opacity: 1}
+}
+
+/* The Close Button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+.greeting{
+  height: 10vh;
+  background-color: #DD2D4A;
+  opacity: 50%;
+}
+
+.greeting-response{
+  height: 90vh;
+}
+
+.site-filter{
+  width: 100vw;
+}
+/* pdf resume styling 
+TODO: give resume unique class to make styling specific to resume vs. all iframes 
+*/
+iframe{
+    float:right
+}
+
+/* col styling to enable compatibility for various screen sizes such as desktop / portrait / mobile / mobile landscape */
+
+  		/* For phones (portrait) unless another @media rule below is fired */
+          @media only screen and (max-width: 500px) {
+			.col-sm-00  {display: 		   none; }
+			.col-sm-12 	{width: 		   100%; }
+
+		}
+
+		/* For medium screens (e.g. landscape phones and portrait tablets) */
+		@media only screen and (min-width: 501px) {
+			.col-md-00  {display: 		   none; }
+			.col-md-01  {width: 		  8.33%; }
+			.col-md-02  {width: 		 16.66%; }
+			.col-md-03  {width: 		 25.00%; }
+			.col-md-04  {width: 		 33.33%; }
+			.col-md-05  {width: 		 41.66%; }
+			.col-md-06  {width: 		 50.00%; }
+			.col-md-07  {width: 		 58.33%; }
+			.col-md-08  {width: 		 66.66%; }
+			.col-md-09  {width: 		 75.00%; }
+			.col-md-10  {width: 		 83.33%; }
+			.col-md-11  {width: 		 91.66%; }
+			.col-md-12  {width: 		100.00%; }
+
+		}
+
+		/* For large screens or landscape tablets*/		
+		@media only screen and (min-width: 1024px) {
+			.col-md-00  {display: 		initial; }
+			.col-sm-00  {display:       initial; }
+			.col-lg-01  {width: 		  8.33%; }
+			.col-lg-02  {width: 		 16.66%; }
+			.col-lg-03  {width: 		 25.00%; }
+			.col-lg-04  {width: 		 33.33%; }
+			.col-lg-05  {width: 		 41.66%; }
+			.col-lg-06  {width: 		 50.00%; }
+			.col-lg-07  {width: 		 58.33%; }
+			.col-lg-08  {width: 		 66.66%; }
+			.col-lg-09  {width: 		 75.00%; }
+			.col-lg-10 	{width: 		 83.33%; }
+			.col-lg-11 	{width: 		 91.66%; }
+			.col-lg-12 	{width: 		100.00%; }
+		}
+
+		[class*="col-"] {
+			float: 				left;
+			border-radius: 		10px;
+		}
+
+		.row::after {
+			content: 			"";
+			clear: 				both;
+			display: 			block;
+		}
+/* end col styling */
