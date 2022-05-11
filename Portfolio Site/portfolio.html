@@ -3,13 +3,13 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>replit</title>
+    <title>Portfolio</title>
     <link href="style.css" rel="stylesheet" type="text/css" />
   </head>
   
   <body onload="checkButton()">
 
-    <div class="col-lg-12 header-bg">
+    <div class="col-lg-12 col-md-12 col-sm-12 header-bg">
         <div id="header">
 
 
@@ -24,18 +24,22 @@
     <div id="myModal" class="modal col-lg-12">
     
       <!-- Modal content -->
-      <div class="modal-content col-lg-08">
-        <div class="modal-header col-lg-12 col-md-10 col-sm-12">
+      <div class="modal-content col-lg-12 col-md-12 col-sm-12">
+        
+        <div class="modal-header col-lg-12 col-md-12 col-sm-00">
           <span class="close">&times;</span>
           <h2 id="modal-header"></h2>
         </div>
-        <div class="modal-body col-lg-12 col-md-08 col-sm-12">
-            <p id="modal-text" class="col-lg-12"> y </p>
-            <p id="modal-img" class="modal-img col-lg-12"></p>
+
+        <div class="modal-body col-lg-12 col-md-12 col-sm-12">
+            <p id="modal-text" class="col-lg-12 col-md-12 col-sm-12"> y </p>
+            <p id="modal-img" class="modal-img col-lg-12 col-md-12 col-sm-12"></p>
         </div>
-        <div class="modal-footer col-lg-12 col-md-08 col-sm-12">
+
+        <div class="modal-footer col-lg-12 col-md-12 col-sm-00">
             <h3 id="modal-footer"></h3>
         </div>
+
       </div>
     
     </div>
@@ -46,11 +50,11 @@
     
   <div id="filter-development">
 
-      <div class="col-lg-02 col-md-12 col-sm-12">
+      <div class="col-lg-03 col-md-02 col-sm-12">
       <h3>HTML/CSS/JS (and more) Projects</h3>
       </div>
 
-      <div class="more-info col-lg-10 col-md-12 col-sm-12">
+      <div class="more-info col-lg-09 col-md-10 col-sm-12">
         <p>
             &emsp;&emsp;<i>School and Personal projects focusing on responsive web development with HTML/CSS/JS, node.js, and React, with more frameworks
                 to be added in the future. </i>
@@ -58,27 +62,34 @@
 
       </div>
 
-
+      <div class="col-sm-04"></div>
 
       <div class="col-lg-12 col-md-12 col-sm-12">
-
-        <img src="img/mentor.jpg" alt="html/css/js project" class="project project-desc" onclick="portfolioClick('mentor')">
-        <img src="img/restaurant-search.jpg" alt="html/css/js project" class="project project-desc" onclick="portfolioClick('restaurant-search')">
-        <img src="img/jbs-restaurant.jpg" alt="html/css/js project" class="project project-desc" onclick="portfolioClick('jbs-restaurant')">
-        <img src="img/invest.jpg" alt="html/css/js project" class="project project-desc" onclick="portfolioClick('invest')">
-        <img src="img/color-picker.jpg" alt="html/css/js project" class="project project-desc" onclick="portfolioClick('color-picker')">
-        <img src="img/calculator.jpg" alt="html/css/js project" class="project project-desc" onclick="portfolioClick('calculator')">
+        <div class="col-sm-12">
+          <img src="img/mentor.jpg" alt="html/css/js project" class="project project-desc modal-small" onclick="portfolioClick('mentor')">
+          <img src="img/restaurant-search.jpg" alt="html/css/js project" class="project project-desc modal-small" onclick="portfolioClick('restaurant-search')">
+        </div>
+        <div class="col-sm-12">
+          <img src="img/jbs-restaurant.jpg" alt="html/css/js project" class="project project-desc modal-small" onclick="portfolioClick('jbs-restaurant')">
+          <img src="img/invest.jpg" alt="html/css/js project" class="project project-desc modal-small" onclick="portfolioClick('invest')">
+        </div>
+        <div class="col-sm-12">
+          <img src="img/color-picker.jpg" alt="html/css/js project" class="project project-desc modal-small" onclick="portfolioClick('color-picker')">
+          <img src="img/calculator.jpg" alt="html/css/js project" class="project project-desc modal-small" onclick="portfolioClick('calculator')">
+        </div>
       </div>
 
+      <div class="col-sm-04"></div>
+      
       <div class="col-lg-12 col-md-12 col-sm-12">
         <br><br><br><br>
       </div>
 
-      <div class="col-lg-02 col-md-12 col-sm-12">
+      <div class="col-lg-03 col-md-02 col-sm-12">
         <h3>Software Projects (Python, Java, JS)</h3>
       </div>
 
-      <div class="more-info col-lg-10 col-md-12 col-sm-12">
+      <div class="more-info col-lg-09 col-md-10 col-sm-12">
         <p>
             &emsp;&emsp;<i> A mixture of School and Personal projects, focusing on Python and Java for Desktop app development with GUI, Server, and File Management 
                 integration. Plus a combination of VoltBuilder and HTML/CSS/JS to create responsive desktop/mobile web apps. </i>
@@ -86,21 +97,28 @@
       </div>
 
       <div class="col-lg-12 col-md-12 col-sm-12">
-        <img src="img/student-mgmt.jpg" alt="html/css/js project" class="project project-desc" onclick="portfolioClick('student-mgmt')">
-        <img src="img/checkout-system.jpg" alt="html/css/js project" class="project project-desc" onclick="portfolioClick('checkout-system')">
-        <img src="img/manager.jpg" alt="html/css/js project" class="project project-desc" onclick="portfolioClick('manager')">
-        <img src="img/chat-server.jpg" alt="html/css/js project" class="project project-desc" onclick="portfolioClick('chat-server')">
-        <img src="img/phone-1.jpg" alt="html/css/js project" class="project project-desc" onclick="portfolioClick('phone-1')"> 
-        <img src="img/phone-2.jpg" alt="html/css/js project" class="project project-desc" onclick="portfolioClick('phone-2')">
-        <img src="img/phone-3.jpg" alt="html/css/js project" class="project project-desc" onclick="portfolioClick('phone-3')">
-
+        <div class="col-sm-12">
+          <img src="img/student-mgmt.jpg" alt="html/css/js project" class="project project-desc modal-small" onclick="portfolioClick('student-mgmt')">
+          <img src="img/checkout-system.jpg" alt="html/css/js project" class="project project-desc modal-small" onclick="portfolioClick('checkout-system')">
+        </div>
+        <div class="col-sm-12">
+          <img src="img/manager.jpg" alt="html/css/js project" class="project project-desc modal-small" onclick="portfolioClick('manager')">
+          <img src="img/chat-server.jpg" alt="html/css/js project" class="project project-desc modal-small" onclick="portfolioClick('chat-server')">
+        </div>
+        <div class="col-sm-12">
+          <img src="img/phone-1.jpg" alt="html/css/js project" class="project project-desc modal-small" onclick="portfolioClick('phone-1')"> 
+          <img src="img/phone-2.jpg" alt="html/css/js project" class="project project-desc modal-small" onclick="portfolioClick('phone-2')">
+        </div>
+        <div class="col-sm-12">
+          <img src="img/phone-3.jpg" alt="html/css/js project" class="project project-desc modal-small" onclick="portfolioClick('phone-3')">
+        </div>
       </div>
       
-      <div class="col-lg-02 col-md-12 col-sm-12">
+      <div class="col-lg-03 col-md-02 col-sm-12">
         <h3>Database Projects</h3>
       </div>
 
-      <div class="more-info col-lg-10 col-md-12 col-sm-12">
+      <div class="more-info col-lg-09 col-md-10 col-sm-12">
         <p>
             &emsp;&emsp;<i> A showcase of a working database I built in cooperation with a small group of students for our Business Database Systems class.
                 Plus some ERDs for other projects. </i>
@@ -109,14 +127,14 @@
 
       <div class="col-lg-12 col-md-12 col-sm-12">
 
-        <img src="img/sql-dog.jpg" alt="html/css/js project" class="project project-desc" onclick="portfolioClick('sql-dog')">
+        <img src="img/sql-dog.jpg" alt="html/css/js project" class="project project-desc modal-small" onclick="portfolioClick('sql-dog')">
       </div>
 
-      <div class="col-lg-02 col-md-12 col-sm-12">
+      <div class="col-lg-03 col-md-02 col-sm-12">
         <h3>WIP Projects / Whiteboarding Phase</h3>
       </div>
 
-      <div class="more-info col-lg-10 col-md-12 col-sm-12">
+      <div class="more-info col-lg-09 col-md-10 col-sm-12">
         <p>
             &emsp;&emsp;<i> A place for projects I'm working on that aren't quite ready to be published yet but I'm still excited to be working on </i>
         </p>
@@ -130,11 +148,11 @@
 
   <div id="filter-music">
 
-      <div class="col-lg-02 col-md-12 col-sm-12">
+      <div class="col-lg-03 col-md-02 col-sm-12">
         <h3>Music</h3>
       </div>
 
-      <div class="more-info col-lg-10 col-md-12 col-sm-12">
+      <div class="more-info col-lg-09 col-md-10 col-sm-12">
         <p>
           &emsp;&emsp;<i>Current Projects: <br>
             
@@ -142,9 +160,9 @@
       </div>
 
       <div class="col-lg-12 col-md-12 col-sm-12">
-        <img src="img/sql-dog.jpg" alt="html/css/js project" class="project project-desc" onclick="portfolioClick('music-1')">
-        <img src="img/lifter.jpg" alt="html/css/js project" class="project project-desc" onclick="portfolioClick('music-2')">
-        <img src="img/busy-signals.jpg" alt="html/css/js project" class="project project-desc" onclick="portfolioClick('music-3')">
+        <img src="img/sql-dog.jpg" alt="html/css/js project" class="project project-desc modal-small" onclick="portfolioClick('music-1')">
+        <img src="img/lifter.jpg" alt="html/css/js project" class="project project-desc modal-small" onclick="portfolioClick('music-2')">
+        <img src="img/busy-signals.jpg" alt="html/css/js project" class="project project-desc modal-small" onclick="portfolioClick('music-3')">
       </div>
   </div>
 
@@ -156,11 +174,16 @@
 
   <div class="portfolio-placeholder">
       <p id="mentor-text">
-        Mentorlink application developed in collaboration with five other students for our Captsone Information Systems project. 
+        <b>Mentorlink</b>
+        <br><br>
+        <b>Key Technologies Used:</b> HTML/CSS/JS, repl.it, Trello, Slack
+        <br><br>
+        <b>Project Description:</b><br>
+        Mentorlink is a website I worked on in collaboration with five other students for my Senior Captsone class in Information Systems at ASU. 
         We used an Agile approach to develop the website over the course of four, week long sprints and communicated via Slack, Trello Boards,
         and Zoom meetings. We used REPL.it, an online develoment platform to give us the ability to write live code together remotely and collaborate
-        without having to worry about accidentally overwriting someone's work. 
-        <br>
+        without having to worry about accidentally overwriting someone's work -- if you're not familiar with it, think the Google Workspace but for coding.
+        <br><br>
         I was on the development side of the project, focusing on site navigation and functionality, utilizing JavaScript to enable page traversal
         and updating thread posts. Each week I participated in team meetings discussing our plans for the upcoming week's sprint, and the tasks we would take on to 
         accomplish those goals. We utilized a Scrum framework to organize our team roles, and throughout the week our "Scrum Master" would periodically 
@@ -169,6 +192,9 @@
         One of the biggest challenges we faced during this project was doing everything remotely, as ASU still had limited campus access in the Spring of 2021 when this was developed.
         Coordinating meetings, tasks, and general communication was slow-going until we started getting into the general workflow of online collaboration. Fortunately, this was our 
         second project I had worked on with this team, so it was a lot more seamless than the first project. 
+        <br><br>
+        <b>Key Takeaways/Skills Learned:</b><br>
+        Input Validation for account creation / dynamically adding/removing html content using JS / Remote Collaboration / local storage implementation </b>
 
     </p>
 
@@ -177,17 +203,24 @@
     </p>
 
     <p id="rsearch-text">
-      This was one of the group projects I worked on for my Capstone in Information Systems class at ASU. This was the first project I worked on with this team, 
-      and we would later work together on building our mentoring application. This first project was completed using an Agile approach with a Scrum based framework, 
-      and consisted of three, week-long sprints. 
+      <b>Restaurant Search Website</b>
       <br><br>
-      This project was more focused on functionality than aesthetics, as it was meant to serve as a laucnhing point for our team to work a bigger project.
+      <b>Key Technologies Used: </b> HTML/CSS/JS, repl.it, Slack, Trello 
+      <br><br>
+      <b>Project Description:</b><br>
+      This was the first group project I worked on for my Capstone in Information Systems class at ASU, and later on I'd continue to work with the same group to build our Mentorlink site. Throughout our time working togeter we used an Agile approach with a Scrum based framework. 
+      Using these methodologies, and having our sprint goals listed out on our Trello board enabled us to collaborate efficiently and keep team members up to date on our progress -- even though at the time we were 100% remote due to the Corona Virus lockdown. 
+      <br><br>
+      This project was more focused on functionality than aesthetics, as it was meant to serve as a launching point for our second major project. Because of this, we were only given a limited timeframe to work with and it was completed in only three, week-long sprints. 
       I was on the development team for this project and worked on implementing administrator functionality and restaurant review features primarily using JavaScript.
       <br><br>
       Through working on this restaurant search website I learned how important it is to understand the role every member of the team plays, and pay attention to the 
-      functionality they are implementing, in order to ensure the code remains consistent and compatible. I had to work closely with the developers working on the login 
-      and user profiles to make sure the administrator and restaurant review features utilized the features they were working on. Thanks to this coordination and consistent use
+      functionality they are implementing, in order to ensure the code remains consistent and compatible. For example, I had to work closely with the developers working on the login 
+      and user profiles to make sure the administrator and restaurant review features utilized the the login/user privelage functions they were working on. Thanks to this coordination and consistent use
       of an updated Trello board, we were able to get our project to a presentable state that could serve as a foundation for bigger web apps in the future. 
+      <br><br>
+      <b>Key Takeaways/Skills Learned: </b> online/group project collaboration / agile and scrum development methodologies <br>
+
   </p>
 
   <p id="rsearch-img">
@@ -195,18 +228,27 @@
   </p>
 
   <p id="jbs-text">
-    A group project I worked on with two other students for our Web Technologies class. Our goal for this project was to develop a new website for a local
-    business that implments various features such as integration with a mysql database to pull pricing information, a cart system that calculates total price, and a contact
-    with all relevant links and maps. 
+    <b>Key Technologies Used: </b> node.js / mySQL / HTML/CSS/JS
+    <br><br>
+    <b>Project Description:</b><br>
+    A group project I worked on with two other students for my Web Technologies class at ASU. Our goal for this project was to develop a new website for a local
+    business that implments various features such as integration with a mySQL database to pull pricing information, a cart system that calculates total price, and a contact page
+    with all relevant links and maps. This was my first project using node.js to enable access to a mySQL database, in this case, it was used to access menu pricing for the various dishes
+    served by the restaurant. 
+    <br><br>
+    <b>Key Takeaways/Skills Learned: </b>using node.js to communicate with databases and utilize the retrieved data in various calculations / utilizing iframes to embed content onto a site  <br>
   </p>
   <p id="jbs-img">
     <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vQm7_BBX_LJ5wBaCFaaZSOi5-ukCCBikkzxOTchfCb3VjMDiL07e3KbVD3wOyaANMgaaRPMU7QZzCFH/embed?start=false&loop=false&delayms=3000" frameborder="0" width="480" height="299" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
   </p>
 
   <p id="invest-text">
+    <b>Key Technologies Used: </b> HTML/CSS/JS 
+    <br><br>
+    <b>Project Description:</b><br>
     Investing web app that calculates investment timelines based on user input. 
-
-    Utilizes HTML/CSS/JS
+    <br><br>
+    <b>Key Takeaways/Skills Learned:</b><br> using JS to collect user input and perform calculations based on the information entered by the user 
 
   </p>
   <p id="invest-img">
@@ -214,7 +256,12 @@
   </p>
 
   <p id="color-text">
+    <b>Key Technologies Used: </b> HTML/CSS/JS
+    <br><br>
+    <b>Project Description:</b><br>
     Web app that determines colors based on user input and slider interaction. 
+    <br><br>
+    <b>Key Takeaways/Skills Learned:</b> using JS to dynamically alter page elements based on user selection <br>
   </p>
 
   <p id="color-img">
@@ -222,7 +269,12 @@
   </p>
 
   <p id="calculator-text">
+    <b>Key Technologies Used: </b> HTML/CSS/JS
+    <br><br>
+    <b>Project Description:</b><br>
     Simple, functioning calculator web app / helped with output testing
+    <br><br>
+    <b>Key Takeaways/Skills Learned: </b>exception handling to ensure users can't accidentally cause crashes (zero division exceptions)<br>
 
   </p>
 
@@ -231,9 +283,13 @@
   </p>
 
   <p id="student-mgmt-text">
-
+    <b>Key Technologies Used: </b> Java
+    <br><br>
+    <b>Project Description:</b><br>
     Java app that allows users to manage a class of students and their individual test scores. Users can select any number of quizzes they
     want and the app will calculate: class average, student average, and quiz average based on the user entered data. 
+    <br><br>
+    <b>Key Takeaways/Skills Learned:</b> creating an array with a size determined by user input / looping through arrays to perform calculations and displaying the results  <br>
 
   </p>
 
@@ -242,8 +298,13 @@
   </p>
 
   <p id="library-checkout-text">
+    <b>Key Technologies Used: </b> Java
+    <br><br>
+    <b>Project Description:</b><br>
     Java app that is an electronic device checkout system that provides features such as current rental status for an item, item search, ability to update and 
     delete items from the array, add new device (generates unique SKU), and more. 
+    <br><br>
+    <b>Key Takeaways/Skills Learned: </b> adding/updating/deleting content from an array <br>
 
   </p>
 
@@ -254,8 +315,13 @@
   </p>
 
   <p id="manager-text">
+    <b>Key Technologies Used: </b> Python
+    <br><br>
+    <b>Project Description:</b><br>
     Employee management app that keeps track of employee information and lists all employees under a certain manager. Focuses on inheritance
     as all managers inherit the traits of the employee class. 
+    <br><br>
+    <b>Key Takeaways/Skills Learned:</b> applying inheritance and parent-child relationships to python<br>
 
   </p>
 
@@ -266,7 +332,12 @@
   </p>
 
   <p id="chat-text">
+    <b>Key Technologies Used: </b> Python
+    <br><br>
+    <b>Project Description:</b><br>
     Python chat server that enables multiple clients to connect directly to the server module and communicate real time. 
+    <br><br>
+    <b>Key Takeaways/Skills Learned: </b> GUI Chat implementation / enabling communication between multiple instances of an app client by connecting to a server program <br>
 
   </p>
 
@@ -275,9 +346,13 @@
   </p>
 
   <p id="mob1-text">
-
+    <b>Key Technologies Used: </b> HTML/CSS/JS / VoltBuilder / node.js / mySQL
+    <br><br>
+    <b>Project Description:</b><br>
     Mobile-first focused, web app, that connects to a sql database and allows a user to search for popular baby names based on a given 
     state and year, and provides the user with clean visual representation of the frequency of certain names. 
+    <br><br>
+    <b>Key Takeaways/Skills Learned:</b> creating mobile apps using HTML/CSS/JS with voltbuilder / creating graphs from data retrieved from mySQL queries <br>
 
   </p>
 
@@ -286,9 +361,13 @@
   </p>
 
   <p id="mob2-text">
-
+    <b>Key Technologies Used: </b> HTML/CSS/JS / VoltBuilder
+    <br><br>
+    <b>Project Description:</b><br>
     Mobile app study that aimed to take advantage of the motion control on smart phones to dynamically change the screen color as the 
     user shakes their device.
+    <br><br>
+    <b>Key Takeaways/Skills Learned:</b> Utilizing JS to change elements of the screen by detecting when user shakes their phone <br>
 
   </p>
 
@@ -299,8 +378,13 @@
 
   </p>
   <p id="mob3-text">
-    Mobile app study that expanded on the color shake app to provide additional locational information to the user and gives the user a live graphical
+    <b>Key Technologies Used: </b> HTML/CSS/JS / VoltBuilder
+    <br><br>
+    <b>Project Description:</b><br>
+    Mobile app study that uses the built in gyroscope on smartphones to provide locational information to the user and gives the user a live graphical
     representation of the data as it is being processed. 
+    <br><br>
+    <b>Key Takeaways/Skills Learned:</b> using gyroscope in smartphones to provide input for program functions / integrating 3rd party frameworks into development  <br>
 
   </p>
 
@@ -311,11 +395,19 @@
   </p>
 
   <p id="dog-text">
-
+    <b>Key Technologies Used: </b> SQL / Slack / Tableau 
+    <br><br>
+    <b>Project Description:</b><br>
     Report for a custom SQL database solution I worked on in collaboration with a group of peers for my Database class to integrate a new SQL Database
     into a business that is looking for a new way to keep track of all of their data. In this case, our report was based on a Dog Grooming company, 
     and we had to design a database that would keep track of employee, customer, dog, and pricing information while sticking to the current format
     of their business rules. 
+    <br>
+    From there we worked on creating visualizations based on queries ran on the database, so the company can understand the current state of their business and view 
+    valuable analytics about their customers. 
+
+    <br><br>
+    <b>Key Takeaways/Skills Learned:</b> Database Structure / Data Visualization <br>
 
   </p>
   <p id="dog-img">
