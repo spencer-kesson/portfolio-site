@@ -72,6 +72,18 @@ function portfolioClick(portfolio) {
         modalLocation.innerHTML = document.getElementById('dog-text').innerHTML;
         modalImg.innerHTML = document.getElementById('dog-img').innerHTML;
     }
+    else if(portfolio == 'music-1') {
+        modalLocation.innerHTML = document.getElementById('music-1-text').innerHTML;
+        modalImg.innerHTML = document.getElementById('music-1-img').innerHTML;
+    }
+    else if(portfolio == 'music-2') {
+        modalLocation.innerHTML = document.getElementById('music-2-text').innerHTML;
+        modalImg.innerHTML = document.getElementById('music-2-img').innerHTML;
+    }
+    else if(portfolio == 'music-3') {
+        modalLocation.innerHTML = document.getElementById('music-3-text').innerHTML;
+        modalImg.innerHTML = document.getElementById('music-3-img').innerHTML;
+    }
     
 
 

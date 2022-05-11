@@ -86,7 +86,7 @@ the site in the future without defaulting to the header styling
 ul {
     list-style-type: none !important;
     list-style: none !important;
-    margin: 0;
+    margin: 10;
     padding: 0;
     overflow: hidden;
     background-color: #333333;
@@ -94,6 +94,7 @@ ul {
   
   li {
     float: left;
+    list-style: none !important;
   }
   
   li a {
@@ -106,13 +107,23 @@ ul {
   }
   
   li a:hover {
-    background-color: #111111;
+    background-color: #e54747;
+  }
+
+  .header-bg{
+    background-color:#880D1E !important;
+  }
+
+  label {
+    color: white;
+    vertical-align: text-bottom;
+    float: right;
+    text-align: right;
   }
 /* end header styling */
 
 /* background img for about me section */
 .about-me{
-    background-image: url('spencer-desert.jpg') !important;
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -154,6 +165,10 @@ ul {
   color: white;
 }
 
+.modal-img{
+  object-fit: contain;
+}
+
 /* Modal Body */
 .modal-body {padding: 2px 16px;}
 
@@ -167,10 +182,10 @@ ul {
 /* Modal Content/Box */
 .modal-content {
   background-color: #fefefe;
-  margin: 15% auto; /* 15% from the top and centered */
-  padding: 20px;
-  border: 1px solid #888;
-  width: 80%; /* Could be more or less, depending on screen size */
+  margin: 5% 10% 5% 15% !important; /* from the top and centered */
+  padding: 3vw;
+  border: 1vw solid #888;
+  width: 60% !important; /* Could be more or less, depending on screen size */
   animation-name: animatetop;
   animation-duration: 0.4s
 }
@@ -207,6 +222,7 @@ ul {
   height: 90vh;
 }
 
+/* filter on the home page */ 
 .site-filter{
   width: 100vw;
 }

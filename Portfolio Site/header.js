@@ -18,15 +18,20 @@ function displayHeader(){
     + "<header><nav><li><a href='about-me.html'> About Me </a></li>" 
     + "<header><nav><li><a href='portfolio.html'> Portfolio </a></li>" 
     + "<header><nav><li><a href='contact.html'> Contact </a></li>"
-    + '<input type="radio" id="music-btn" name="site-filter" value="music" onclick="headerRadio()">'
-    + '<label for="music-btn">Music</label>'
-    + '<input type="radio" id="both-btn" name="site-filter" value="both" onclick="headerRadio()" checked>'
-    + '<label for="both-btn">Both</label>'
-    + '<input type="radio" id="technology-btn" name="site-filter" value="development" onclick="headerRadio()">'
-    + '<label for="technology-btn">Web/Software Development</label>';
+    + "<header><nav><li></li>"
+    + "<header><nav><li></li>"
+    + "<header><nav><li></li>"
+    + "<header><nav><li></li>"
+    + '<header><nav><li><input type="radio" id="music-btn" name="site-filter" class="radio" value="music" onclick="headerRadio()">'
+    + '<label for="music-btn">Music</label></a></li>'
+    + '<header><nav><li><input type="radio" id="both-btn" name="site-filter" class="radio" value="both" onclick="headerRadio()" checked>'
+    + '<label for="both-btn">Both</label></a></li>'
+    + '<header><nav><li><input type="radio" id="technology-btn" name="site-filter" class="radio" value="development" onclick="headerRadio()">'
+    + '<label for="technology-btn">Web/Software Development</label></a></li>';
     
 }
 
+/* function that filters the site based on user input from radio button */
 function headerRadio(){
 
     var filterDev = document.getElementById('filter-development');
@@ -34,20 +39,22 @@ function headerRadio(){
     var filterBoth = document.getElementById('filter-both');
 
     if(document.getElementById('music-btn').checked){
-        alert('working');
         filterDev.style.display = 'none';
-        filterBoth.style.display ='none';
+
+        filterMusic.style.display ='none';
         filterMusic.style.display ='inline';
+
+        filterBoth.style.display ='none';
     }
     else if(document.getElementById('technology-btn').checked){
-        alert('tech');
+        filterDev.style.display = 'none';
+        filterDev.style.display = 'inline';
         filterMusic.style.display ='none';
         filterBoth.style.display ='none';
-        filterDev.style.display = 'inline';
+        
 
         }
     else if(document.getElementById('both-btn').checked){
-        alert('both');
 
         filterDev.style.display = 'none';
         filterDev.style.display = 'inline';
@@ -68,6 +75,42 @@ function headerRadio(){
             dFilter.style.display = 'inline';
         }*/
     }
+}
+
+/* function that collects the user selection from the home page and does one of two things:
+    1: if the user is just browing: scrolls the page down to the blog
+    TODO: add filtering system for blog
+    2: if the user selects either music or development, they are directed to the portfolio page and the checkButton() function is executed,
+    using local storage to check the correct button based on selection. */
+function homeFilter(selection){
+
+    var selectVar = selection /* var to store selection from home screen */
+
+    if (selectVar == 'browsing'){
+        window.location.href = '#blog';
+        
+    }
+    else if (selectVar == 'music' || 'development') {
+
+
+        switch (selectVar){
+            case 'music': 
+                localStorage.setItem('selection-storage','music-btn');
+                break;
+            case 'development':
+                localStorage.setItem('selection-storage', 'technology-btn')
+                break;
+        }
+
+        window.location.href = 'portfolio.html';
+
+    }
+
+}
+
+function checkButton(filter){
+    document.getElementById(localStorage.getItem('selection-storage')).checked = true;
+    headerRadio();
 }
 
 document.onload = displayHeader();
