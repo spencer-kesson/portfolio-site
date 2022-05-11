@@ -87,7 +87,7 @@ function homeFilter(selection){
     var selectVar = selection /* var to store selection from home screen */
 
     if (selectVar == 'browsing'){
-        window.location.href = '#blog';
+        window.location.href = '#header';
         
     }
     else if (selectVar == 'music' || 'development') {
